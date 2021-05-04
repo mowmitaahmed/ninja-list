@@ -1,19 +1,15 @@
-import Head from 'next/head';
-import Footer from "../comps/Footer";
-import Navbar from "../comps/Navbar";
-import styles from "../styles/Home.module.css";
-import Link from 'next/link'
+import React from "react";
 
-export default function Home() {
+const About = () => {
   return (
     <>
     <Head>
-        <title>Ninja List | Home</title>
+        <title>Ninja List | About</title>
         <meta name="keywords" content="ninjas" />
     </Head>
     <div>
-      <h1 className={styles.title}>Welcome to Next.js!</h1>
-      <p className={styles.text}>
+      <h1>About</h1>
+      <p>
         There are many variations of passages of Lorem Ipsum available, but the
         majority have suffered alteration in some form, by injected humour, or
         randomised words which don't look even slightly believable. If you are
@@ -26,7 +22,7 @@ export default function Home() {
         generated Lorem Ipsum is therefore always free from repetition, injected
         humour, or non-characteristic words etc.
       </p>
-      <p className={styles.text}>
+      <p>
         There are many variations of passages of Lorem Ipsum available, but the
         majority have suffered alteration in some form, by injected humour, or
         randomised words which don't look even slightly believable. If you are
@@ -39,10 +35,9 @@ export default function Home() {
         generated Lorem Ipsum is therefore always free from repetition, injected
         humour, or non-characteristic words etc.
       </p>
-      <Link href="/ninjas">
-          <a className={styles.btn}>See Ninja Listing</a>
-      </Link>
     </div>
     </>
   );
-}
+};
+
+export default About;
